@@ -3,6 +3,10 @@
 
 #include "AnimNotifyWithComponent.generated.h"
 
+/*
+ * A solution based on manually creating UStaticMeshComponent in NotifyBegin function.
+ * It work ingame no problem, but causes weird freeze in the editor anim preview.
+ */
 UCLASS()
 class UAnimNotifyWithComponent : public UAnimNotifyState
 {

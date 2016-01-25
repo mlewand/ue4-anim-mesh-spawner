@@ -1,7 +1,6 @@
 
 #include "AnimNotifyWithComponent.h"
 
-
 UAnimNotifyWithComponent::UAnimNotifyWithComponent(const class FObjectInitializer& PCIP)
 	: Super(PCIP)
 {
@@ -33,7 +32,7 @@ void UAnimNotifyWithComponent::NotifyBegin( USkeletalMeshComponent* AnimMeshComp
 	if ( AnimMeshComp->GetOuter() != NULL ) {
 		UE_LOG( LogTemp, Log, TEXT( "Has an outer %s" ), *AnimMeshComp->GetOuter()->GetName() );
 		if ( AnimMeshComp->GetOwner() == NULL ) {
-			UE_LOG( LogTemp, Log, TEXT( "But doesnt owner" ) );
+			UE_LOG( LogTemp, Log, TEXT( "But no owner" ) );
 		}
 	}
 
